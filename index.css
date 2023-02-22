@@ -1,0 +1,741 @@
+ @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    background-color: #F2F2F2;
+}
+
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 1.625;
+    margin: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header{  
+    color: white;
+    background: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.92) ,rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)),
+     url(./img/eggs.jpg)  center center / cover no-repeat; 
+    
+}
+
+.top-bar{
+    padding: 18px 20px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu-item{
+    display: inline-block;
+    margin:0 15px;
+}
+
+.menu-item:hover{
+    color: #C89446;
+}
+
+.logo{
+    margin-bottom: 15px;
+}
+
+
+
+.baseline{
+    padding: 50px 0 70px 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.baseline-welcome{
+    font-family: "Pinyon Script",serif;
+    color: #C89446;
+    font-size: 2.2rem;
+    display: block;
+}
+
+.baseline-name{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.baseline-slogan{
+    font-size: 1rem;
+    font-weight: 300;
+    display: block;
+    letter-spacing: 2px;
+}
+
+.menu-button{
+    border: 1px solid #C89446;
+    padding:7px 10px;
+    transition-property: color, background-color;
+    margin-top: 5px;
+}
+
+.menu-button:hover{
+    background: #C89446;
+    color: white ;
+}
+
+.infos .block-img img{
+    border: 1px solid #C89446;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.fancy{
+    font-family: "Pinyon Script",serif;
+    color: #C89446;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 50px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.fancy::before{
+    content: " ";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #C89446;
+    margin-bottom: 15px;
+   
+}
+
+.catch-phrase{
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 35px;
+    letter-spacing: 2px;
+    color: #383838;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.description{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #6F6F6F;
+    margin-left: 10px;
+}
+
+.see-more{
+    color: #C89446;
+    margin-left: 10px;
+}
+
+.see-more:hover{
+    text-decoration: underline;
+}
+
+.see-more::after{
+    content: " >";
+}
+
+.types-of-food{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 65px;
+}
+
+.dishes:hover{
+    text-decoration:#C89446 underline 2px;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1150px;
+}
+
+.menu-summary-item {
+    padding-left: 120px;
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+
+.menu-summary p{
+    margin-top: 0;
+    font-size: 0.875rem;
+}
+
+.menu-summary img{
+    width: 100px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-summary-title{
+    font-size: 1.125rem;
+    color: #383838;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.menu-summary-price{
+    font-size: 2.5rem;
+    font-family: "Pinyon Script",serif;
+    color: #C89446;
+    line-height: 1;
+}
+
+.chef-div{
+    margin-top: 70px;
+}
+
+.reservation{
+    margin-top: 50px;
+    color: white;
+    background: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.92) ,rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)),
+     url(./img/reservation.jpg)  center center / cover no-repeat; 
+     display: flex;
+     text-align: center;
+     flex-direction: column;
+    
+}
+
+.reservation-form{
+    margin: 64px 0;
+}
+
+.form-inner-wrap{
+    margin-bottom: 64px;
+}
+
+.reservation .fancy{
+    margin-top: 97px;
+}
+
+.reservation .fancy::before{
+    display:none
+}
+
+.reservation .catch-phrase{
+    color: white;
+}
+
+.reservation .description{
+    color: #6F6F6F;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+input, select{
+    margin-top: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: transparent;
+    color: #ffffff;
+    opacity: 0.9;
+    border: #6F6F6F 1px solid;
+    width: 255px;
+    height: 40px;
+}
+
+input:focus , select:focus{
+    outline:1px solid #C89446 ;
+  background-color: rgba(255, 255, 255, 0.30);
+}
+
+option{
+    color: black;
+}
+
+.gold-button{
+    width: 255px;
+    height: 40px;
+    color: white;
+    background-color: #C89446;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+.gold-button:active {
+    background-color: white;
+  }
+
+  .date{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    line-height: 23px;
+    font-size: 1.125rem;
+    font-weight: 300;
+  }
+
+  .date span{
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 35px;
+  }
+
+  .articles{
+    margin-top: 24px;
+  }
+
+  .line{
+    border-bottom: 1px solid rgba(22, 22, 22, 0.1);
+  }
+
+  .map{
+    display:block ;
+    margin-top: 50px ;
+    width: 100%;
+    height: 460px;
+  }
+
+  footer{
+    text-align:center ;
+    background-color: #383838;
+  }
+
+  .foot{
+    padding-top:50px;
+    padding-bottom: 50px;
+  }
+
+  footer h4{
+    color: #C89446;
+  }
+
+  .container .description span{
+    color: white;
+    
+  }
+
+  .block-ingredients{
+    margin: 0 20px;
+    border: solid 1px #C89446;
+    padding: 35px 20px;
+    font-weight: 600;
+    color: #383838;
+    
+  }
+
+  .block-ingredients ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;    
+    }
+
+    .block-ingredients li{
+        padding: 5px 0;
+    }
+
+  .block-ingredients span{
+    width: 35px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 300;
+  }
+
+  .section-overflow{
+    padding: 20px 0;
+  }
+
+  .block-video{
+     text-align: center;
+     position: relative;
+     cursor: pointer;
+     background-color: #383838;
+  }
+
+
+
+  .block-video img{
+    max-width: 375px;
+    max-height: 328px;
+    display: block;
+    opacity: 0.6;
+    box-shadow: 0 0 30px rgba(128,128,128,0.5);
+  }
+
+  .block-video::after{
+    content: '';
+    background: url(img/play.png) center center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+  }  
+
+  .recipes-mosaique{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+  }
+  
+  .mosaique-item{
+    margin-top: 50px;
+    font-size: 0.875rem;
+    line-height: 24px;
+  }
+
+  .text{
+    margin-left: 5px;
+  }
+
+  .text p{
+    margin: 0;
+  }
+
+  .text h3{
+    margin-bottom: 5px;
+  }
+ 
+  .mosaique-item img{
+    max-width: 125px;
+    max-height: 125px;
+  }
+
+  .pagination{
+    list-style: none;
+    margin: 80px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .pagination li{
+    display: inline-block;
+  }
+
+  .pagination a {
+    border: 1px solid #C89446;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    overflow: hidden;
+    text-indent: -30000px;
+    transition: background 0.3s;
+    margin: 0 10px;
+  }
+
+  .pagination a.active, .pagination a:hover {
+    background:#C89446;
+
+  }
+
+@media only screen and (min-width: 650px){
+    html{
+        font-size:16px
+    }
+
+
+    .logo{
+        margin-bottom: 0;
+    }
+
+    .top-bar{
+        display: flex;
+        align-items: center;
+        max-width: 1150px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .menu-button{
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+
+    .baseline{
+        padding: 125px 0 235px;
+    }
+
+    .baseline-slogan{
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+    }
+
+    .baseline-name{
+        font-size: 4.375rem;
+        letter-spacing: 13px;
+        padding-top: 8px ;
+        padding-bottom: 15px;
+    }
+
+    .baseline-welcome{
+        font-size: 3.75rem;
+    }
+
+    .infos{
+        position: relative;
+        max-width: 930px;
+        margin: 0 auto;
+    }
+
+   
+
+    .infos img{
+        border: none;
+        position: relative;
+        margin-top: 0px;
+        z-index: 3;
+    }
+    
+    .fullscreen{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .block-img{
+        margin: 10px 30px;
+        position: relative;
+    }
+    
+    .block-img1::before{
+        content: "";
+        border:1px solid #C89446;
+        display: block;
+        position: absolute;
+        width: 350px;
+        height: 425px; 
+        top: -30px;
+        left: -25px;
+        z-index: 2;
+    }
+
+    .wrap1{
+        margin-left: 60px;
+    }
+
+    .block-img2{
+        margin-left: 70px;
+    }
+  
+    .block-img2::before{
+        content: "";
+        border:1px solid #C89446;
+        display: block;
+        position: absolute;
+        width: 350px;
+        height: 425px; 
+        top: -30px;
+        left: 25px;
+        z-index: -1;
+    }
+
+    .fancy{
+        margin: 0;
+    }
+
+    .discover{
+        flex-direction: row;
+    }
+
+    .tasteful{
+        margin-top: 78px;
+        flex-direction: row-reverse;
+    }
+
+    .menus{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menus .catch-phrase{
+        margin-bottom: 0;
+    }
+
+    .menus .fancy::before{
+        margin-left: 30px;
+    }
+
+    .menu-summary{
+        position: relative;
+        justify-content: space-between;
+        padding-top: 85px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu-summary-item{
+        padding-left: 192px;
+        width: calc(50% - 35px);
+        margin-bottom: 65px;
+        margin-top: 43px;
+        background-color: #F2F2F2;
+        
+    }
+
+    .menu-summary-item:nth-child(even){
+        padding-left: 0;
+        padding-right: 192px;
+        text-align: right;
+    }
+
+    .menu-summary-item:nth-child(even) img{
+        
+      right:0;
+      left: auto;
+    }
+
+   .menu-summary img{
+        width: 160px;
+    }
+
+    .menu-summary-title{
+        margin-top: 0;
+        
+    }
+
+    
+    .menu-summary::before{
+        top: 135px;
+        left: 50%;
+        content: '';
+        position: absolute;
+        width: 425px;
+        height: 425px;
+        display:block;
+        border: solid 1px #C89446;
+        transform: translate(-50% ,0) rotate(45deg);
+    }
+
+    .blog{
+        margin-top: 80px;
+    }
+
+    .date{
+        justify-content: center;
+    }
+
+    .blog-desc{
+        margin-right: 0 ;
+        display: flex;
+        flex-direction: column;
+       
+        text-align: end;
+        margin-left: 300px;
+    }
+
+    .blog-desc .fancy::before{
+        display: none;   
+    }
+
+    .articles{
+        display: flex;
+        flex-direction: row;
+        margin-left: 350px;
+    }
+
+    .blog .see-more{
+        display: flex;
+        justify-content: flex-end;
+        text-align: end;
+    }
+
+    footer{
+        text-align: start;
+    }
+
+    .footwrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-categories{
+        max-width: 450px;
+    }
+
+    .block-ingredients span{
+        width: 35px;
+        margin-right: 50px;
+      }
+    
+      .block-ingredients{
+        min-width: 350px;
+        padding: 35px 40px;
+      }
+
+      .block-ingredients li{
+        padding: 12px 0;
+    }
+
+    .section-overflow{
+        padding:  0;
+        margin-top: -20px;
+      }
+
+      .tutorial{
+        margin: 50px 20px;
+        flex-direction: row-reverse;
+      }
+
+      .block-video{
+        margin-left: 30px;
+        max-width: 540px;
+      }
+      
+      .mosaique-item{
+        max-width: 430px;
+        display: flex;
+        flex-direction: row;
+      }
+
+     
+}   
+
+[class*="reveal-"] {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ;
+}
+
+.reveal-2{
+    transition-delay: 0.1s;
+}
+
+.reveal-3{transition-delay: 0.2s;}
+
+.reveal-4{transition-delay: 0.3s;}
+
+
+
+
+
+
+
+
